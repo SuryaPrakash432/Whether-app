@@ -1,0 +1,123 @@
+/* style.css */
+
+/* Reset some basic styling */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-size: cover;
+    background-position: center;
+    transition: background 0.5s ease;
+    color: #fff;
+}
+
+/* Container styling */
+.container {
+    background-color: rgba(0, 0, 0, 0.6);
+    padding: 20px;
+    border-radius: 15px;
+    text-align: center;
+    width: 300px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+}
+
+/* Input and button styling */
+input[type="text"] {
+    padding: 10px;
+    width: 70%;
+    margin-bottom: 10px;
+    border: none;
+    border-radius: 5px;
+    outline: none;
+}
+
+button {
+    padding: 10px 20px;
+    cursor: pointer;
+    border: none;
+    border-radius: 5px;
+    background-color: #007bff;
+    color: white;
+    font-weight: bold;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+/* Weather details styling */
+#weatherDetails {
+    margin-top: 20px;
+}
+
+.weather-icon {
+    width: 100px;
+    height: 100px;
+}
+
+.loading {
+    font-size: 1.5em;
+    color: #ffff99;
+    font-weight: bold;
+    animation: pulse 1s infinite;
+}
+
+/* Pulsing animation */
+@keyframes pulse {
+    0%, 100% {
+        opacity: 0.6;
+    }
+    50% {
+        opacity: 1;
+    }
+}
+
+/* Background themes for different weather */
+.sunny {
+    background-image: url('images/sunny.jpeg');
+}
+
+.cloudy {
+    background-image: url('images/cloudy.jpeg');
+}
+
+.rainy {
+    background-image: url('images/rainy.jpeg');
+}
+
+.haze {
+    background-image: url('images/haze.jpeg');
+}
+
+.mist {
+    background-image: url('images/mist.jpeg');
+}
+
+.snow {
+    background-image: url('images/snow.jpeg');
+}
+
+.thunderstorm {
+    background-image: url('images/thunderstrom.jpeg');
+}
+
+.drizzle {
+    background-image: url('images/drizzle.jpeg');
+}
+.smoke {
+    background-image: url('images/smoke.jpeg');
+}
+
+/* Default background */
+.default-bg {
+    background-image: url('images/default.jpeg');
+}
